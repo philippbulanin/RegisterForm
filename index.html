@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<form id="register">
+    <div class="form">
+        <div class="form-element placeholder placeholder-down" placeholder="First name">
+            <input class="entry-fields" type="text" id="first-name" maxlength="35" autocomplete="off">
+        </div>
+        <div class="form-element placeholder placeholder-down" placeholder="Last name">
+            <input class="entry-fields" type="text" id="last-name" autocomplete="off">
+        </div>
+        <!--<div class="form-element">-->
+            <!--<select name="day" id="day">-->
+                <!--&lt;!&ndash;<option value="false">Day</option>&ndash;&gt;-->
+            <!--</select>-->
+            <!--<select name="month" id="month">-->
+                <!--&lt;!&ndash;<option value="false">Month</option>&ndash;&gt;-->
+                <!--<option value="1">January</option>-->
+                <!--<option value="2">February</option>-->
+                <!--<option value="3">March</option>-->
+                <!--<option value="4">April</option>-->
+                <!--<option value="5">May</option>-->
+                <!--<option value="6">June</option>-->
+                <!--<option value="7">July</option>-->
+                <!--<option value="8">August</option>-->
+                <!--<option value="9">September</option>-->
+                <!--<option value="10">October</option>-->
+                <!--<option value="11">November</option>-->
+                <!--<option value="12">December</option>-->
+            <!--</select>-->
+            <!--<select name="year" id="year">-->
+                <!--&lt;!&ndash;<option value="1970">1970</option>&ndash;&gt;-->
+            <!--</select>-->
+        <!--</div>-->
+        <div class="form-element">
+            <select name="country" id="country" class="entry-fields">
+                <option value="false"><span id="country-title">Choose country</span></option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+                <option value="usa">USA</option>
+            </select>
+        </div>
+        <div class="form-element">
+            <label>Male:<input class="gender" type="radio" name="gender" value="male"></label>
+            <label>Female:<input class="gender" type="radio" name="gender" value="female"></label>
+        </div>
+        <div class="form-element placeholder placeholder-down required" placeholder="Username">
+            <input class="entry-fields" type="text" id="username" autocomplete="off">
+        </div>
+        <div class="form-element placeholder placeholder-down password required" placeholder="Password">
+            <input class="entry-fields" type="password" id="password">
+        </div>
+        <div class="form-element placeholder placeholder-down password required" placeholder="Repeat password">
+            <input class="entry-fields" type="password" id="re-password">
+        </div>
+        <div class="form-element placeholder placeholder-down required" placeholder="Email">
+            <input class="entry-fields" type="text" id="email" autocomplete="off">
+        </div>
+        <div class="form-element placeholder placeholder-down" placeholder="Phone">
+            <input class="entry-fields" type="text" id="phone" maxlength="14" autocomplete="off">
+        </div>
+        <div class="form-element">
+            <button type="submit" id="submit">Register</button>
+        </div>
+    </div>
+</form>
+
+<script src="js/script.js"></script>
+</body>
+</html>

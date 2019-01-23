@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+#register {
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 320px;
+    margin: auto auto;
+    padding: 20px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.placeholder-down:before {
+    display: inline-block;
+    position: absolute;
+    content: attr(placeholder);
+    padding: 0 5px;
+    color: gray;
+    font-size: 20px;
+    background: white;
+    top: 17px;
+    left: 35px;
+    transition: 0.5s;
+}
+
+.placeholder-up {
+    color: black;
+}
+
+.placeholder-up:before {
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    content: attr(placeholder);
+    background: white;
+    top: 1px;
+    left: 45px;
+    transition: 0.5s;
+}
+
+.form-element {
+    position: relative;
+    display: inline-flex;
+    width: 260px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.entry-fields {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 10px 5px;
+    padding: 5px;
+    z-index: 1;
+    background: transparent;
+    font-size: 20px;
+    outline: none;
+}
+
+#country {
+    font-size: 20px;
+}
+
+#country-title {
+    color: red;
+}
+
+.valid,
+.invalid {
+    position: relative;
+}
+
+.valid:after {
+    position: absolute;
+    left: 241px;
+    top: 18px;
+    display: inline-block;
+    content: url("../img/valid-16.png");
+    width: 16px;
+    height: 16px;
+}
+
+.invalid:after {
+    position: absolute;
+    left: 235px;
+    top: 17px;
+    display: inline-block;
+    content: url("../img/invalid-24.png");
+    width: 24px;
+    height: 24px;
+}
+
+#phone::placeholder {
+    content: "place";
+    display: block;
+}
+
+#submit {
+    width: 100px;
+    height: 40px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.error {
+    position: absolute;
+    top: 49px;
+    left: 30px;
+    color: red;
+    z-index: 2;
+    border-top: none;
+    border-radius: 10px;
+}
+
+/*.error:before {*/
+    /*content: "";*/
+    /*position: absolute;*/
+    /*left: 10px;*/
+    /*top: -40px;*/
+    /*border: 20px solid transparent;	border-bottom: 20px solid red;*/
+/*}*/
